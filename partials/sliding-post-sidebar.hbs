@@ -1,0 +1,56 @@
+									<section id="mvp_ad_widget-8" class="lztv-side-widget mvp_ad_widget">
+                                       <div class="lztv-widget-ad left relative"> <span class="lztv-ad-label"><!--Advertisement--></span> {{> medium-ad-300-250}} </div>
+                                       <!--lztv-widget-ad--> 
+                                    </section>
+									<section id="mvp_tabber_widget-7" class="lztv-side-widget mvp_tabber_widget">
+                                       <div class="lztv-widget-tab-wrap left relative">
+                                          <div class="lztv-feat1-list-wrap left relative">
+                                             <div class="lztv-feat1-list-head-wrap left relative">
+                                                <ul class="lztv-feat1-list-buts left relative">
+                                                   <li class="lztv-feat-col-tab active">
+                                                      <a href="http://www.mvpthemes.com/zoxnews/your-comprehensive-guide-to-this-falls-biggest-trends/#lztv-tab-col1">
+                                                         <span class="lztv-feat1-list-but">
+                                                            
+															<!---></span></a></li>
+                                                               <li><a href="http://www.mvpthemes.com/zoxnews/your-comprehensive-guide-to-this-falls-biggest-trends/#lztv-tab-col2"><span class="lztv-feat1-list-but">Latest</span></a></li>
+                                                               <li><a href="http://www.mvpthemes.com/zoxnews/your-comprehensive-guide-to-this-falls-biggest-trends/#lztv-tab-col3"><span class="lztv-feat1-list-but"<!--->
+															
+                                                         </span>
+                                                      </a>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <!--lztv-feat1-list-head-wrap-->
+                                             <div id="lztv-tab-col1" class="lztv-feat1-list left relative lztv-tab-col-cont" style="display: block;">
+
+											{{#get "posts" limit="4" order="published_at desc"}}
+											{{#foreach posts}}
+											<a href="{{url}}" rel="bookmark">
+											  <div class="lztv-feat1-list-cont left relative">
+												<div class="lztv-feat1-list-out relative">
+												  <div class="lztv-feat1-list-img left relative"> <img width="80" height="80" src="{{img_url feature_image}}" class="attachment-lztv-small-thumb size-lztv-small-thumb wp-post-image" alt="" srcset="{{img_url feature_image}} 80w, {{img_url feature_image}} 150w, {{img_url feature_image}} 180w, {{img_url feature_image}} 300w, {{img_url feature_image}} 600w" sizes="(max-width: 80px) 100vw, 80px"> </div>
+												  <!--lztv-feat1-list-img-->
+												  <div class="lztv-feat1-list-in">
+													<div class="lztv-feat1-list-text">
+													  <div class="lztv-cat-date-wrap left relative"> <span class="lztv-cd-cat left relative">{{#primary_tag}}{{name}}{{/primary_tag}}</span><span class="lztv-cd-date left relative">{{date published_at timeago="true"}}</span> </div>
+													  <!--lztv-cat-date-wrap-->
+													  <h2>{{title}}</h2>
+													</div>
+													<!--lztv-feat1-list-text--> 
+												  </div>
+												  <!--lztv-feat1-list-in--> 
+												</div>
+												<!--lztv-feat1-list-out--> 
+											  </div>
+											  <!--lztv-feat1-list-cont--> 
+											</a>
+											{{/foreach}}
+											{{/get}}
+
+                                             </div>
+                                             <!--lztv-tab-col1-->
+                                          </div>
+                                          <!--lztv-feat1-list-wrap--> 
+                                       </div>
+                                       <!--lztv-widget-tab-wrap--> 
+                                    </section>

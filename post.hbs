@@ -1,0 +1,378 @@
+{{#post}}
+<!DOCTYPE html>
+<html lang="en-US" style="transform: none;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>{{title}}</title>
+{{ghost_meta}}
+
+{{ghost_head}}
+
+{{> linked-styles}}
+	
+</head><body class="post-template-default single single-post postid-76 single-format-gallery custom-background" style="transform: none;">
+<div id="lztv-fly-wrap">
+  <div id="lztv-fly-menu-top" class="left relative">
+    <div class="lztv-fly-top-out left relative">
+      <div class="lztv-fly-top-in">
+        <div id="lztv-fly-logo" class="left relative"> <a href="/"><img src="/assets/images/logo-nav.png" alt="LAZYTECH TV" data-rjs="2"></a></div>
+        <!--lztv-fly-logo--> 
+      </div>
+      <!--lztv-fly-top-in-->
+      <div class="lztv-fly-but-wrap lztv-fly-but-menu lztv-fly-but-click"> <span></span> <span></span> <span></span> <span></span> </div>
+      <!--lztv-fly-but-wrap--> 
+    </div>
+    <!--lztv-fly-top-out--> 
+  </div>
+  <!--lztv-fly-menu-top-->
+  <div id="lztv-fly-menu-wrap">
+    
+  </div>
+  <!--lztv-fly-menu-wrap-->
+  <div id="lztv-fly-soc-wrap"> <span class="lztv-fly-soc-head">Connect with us</span>
+    <ul class="lztv-fly-soc-list left relative">
+      <li><a href="{{facebook_url @blog.facebook}}" target="_blank" class="fa fa-facebook fa-2"></a></li>
+      <li><a href="{{twitter_url @blog.twitter}}" target="_blank" class="fa fa-twitter fa-2"></a></li>
+      <li><a href="http://www.instagram.com/lazytechtv" target="_blank" class="fa fa-instagram fa-2"></a></li>
+      <li><a href="https://www.youtube.com/user/lazytechtv" target="_blank" class="fa fa-youtube-play fa-2"></a></li>
+    </ul>
+  </div>
+  <!--lztv-fly-soc-wrap-->
+</div>
+<!--lztv-fly-wrap-->
+<div id="lztv-site" class="left relative" style="transform: none;">
+  <div id="lztv-search-wrap">
+    <div id="lztv-search-box">
+      <form method="get" id="searchform" action="http://www.mvpthemes.com/zoxnews/">
+        <input type="text" name="s" id="s" value="Search" onfocus="if (this.value == &quot;Search&quot;) { this.value = &quot;&quot;; }" onblur="if (this.value == &quot;&quot;) { this.value = &quot;Search&quot;; }">
+        <input type="hidden" id="searchsubmit" value="Search">
+      </form>
+    </div>
+    <!--lztv-search-box-->
+    <div class="lztv-search-but-wrap lztv-search-click"> <span></span> <span></span> </div>
+    <!--lztv-search-but-wrap--> 
+  </div>
+  <!--lztv-search-wrap-->
+  <div id="lztv-site-wall" class="left relative" style="transform: none;">
+    {{> billboard-ad}}
+    <div id="lztv-site-main" class="left relative" style="transform: none;">
+      {{> header}}
+      <!--lztv-main-head-wrap-->
+      <div id="lztv-main-body-wrap" class="left relative" style="transform: none; margin-top: 0px;">
+        <article id="lztv-article-wrap" itemscope="" itemtype="http://schema.org/NewsArticle" style="transform: none;">
+          <meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="{{url}}">
+          <div id="lztv-article-cont" class="left relative" style="transform: none;">
+            <div class="lztv-main-box" style="transform: none;">
+              <div id="lztv-post-main" class="left relative" style="transform: none;">
+                <header id="lztv-post-head" class="left relative">
+					
+                  <h3 class="lztv-post-cat left relative">
+					  {{#primary_tag}}
+					  <a class="lztv-post-cat-link" href="{{url}}">
+						  <span class="lztv-post-cat left">{{name}}</span>
+					  </a>
+					  {{/primary_tag}}
+					</h3>
+                  <h1 class="lztv-post-title left entry-title" itemprop="headline">{{title}}</h1>
+                  <span class="lztv-post-excerpt left">
+                  <p>{{excerpt}}</p>
+                  </span>
+				  
+                  <div class="lztv-author-info-wrap left relative">
+                    <div class="lztv-author-info-thumb left relative"> 
+					{{#author}}
+					<img alt="Image of {{name}}" src="{{img_url profile_image}}" srcset="{{img_url profile_image}} 2x" class="avatar avatar-46 photo" height="46" width="46"> 
+					{{/author}}
+					</div>
+                    <!--lztv-author-info-thumb-->
+					 
+                    <div class="lztv-author-info-text left relative">
+                      <div class="lztv-author-info-date left relative">
+                        <p>Published</p>
+                        <span class="lztv-post-date">{{date published_at timeago="true"}}</span>
+                        <p>on</p>
+                        <span class="lztv-post-date updated">
+                        <time class="post-date updated" itemprop="datePublished" datetime="{{date published_at format="YYYY-DD-MM"}}">{{date published_at format="MMMM DD, YYYY"}}</time>
+                        </span>
+                        <meta itemprop="dateModified" content="{{date modified_at format="YYYY-DD-MM"}}">
+                      </div>
+                      <!--lztv-author-info-date-->
+						{{#author}}
+						<div class="lztv-author-info-name left relative" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                        <p>By</p>
+                        <span class="author-name vcard fn author" itemprop="name"><a href="{{url}}" title="{{name}}" rel="author">{{name}}</a></span> {{#if twitter}}
+						  <a href="{{twitter_url}}" class="lztv-twit-but" target="_blank">
+							  <span class="lztv-author-info-twit-but"><i class="fa fa-twitter fa-2"></i></span>
+						  </a>
+						  {{/if}}
+						</div>
+						{{/author}}
+                      <!--lztv-author-info-name--> 
+					
+                    </div>
+                    <!--lztv-author-info-text--> 
+                  </div>
+				  
+                  <!--lztv-author-info-wrap--> 
+                </header>
+                <div class="lztv-post-main-out left relative" style="transform: none;">
+                  <div class="lztv-post-main-in" style="transform: none;">
+                    <div id="lztv-post-content" class="left relative" style="transform: none;">
+                      <div id="lztv-post-feat-img" class="left relative lztv-post-feat-img-wide2" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"> <img width="1000" height="600" src="{{img_url feature_image}}" class="attachment- size- wp-post-image" alt="" srcset="{{img_url feature_image}} 1000w, {{img_url feature_image}} 300w, {{img_url feature_image}} 768w, {{img_url feature_image}} 590w, {{img_url feature_image}} 400w" sizes="(max-width: 1000px) 100vw, 1000px">
+                        <meta itemprop="url" content="{{img_url feature_image}}">
+                        <meta itemprop="width" content="1000">
+                        <meta itemprop="height" content="600">
+                      </div>
+                      <!--lztv-post-feat-img--> 
+                      <span class="lztv-feat-caption"></span>
+                      <div id="lztv-content-wrap" class="left relative" style="transform: none;">
+                        <div class="lztv-post-soc-out right relative" style="transform: none;">
+                          <div class="lztv-post-soc-wrap left relative" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                            <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; left: 351.5px; top: 0px;">
+                              <ul class="lztv-post-soc-list left relative">
+                                <a href="{{url absolute="true"}}#" onclick="window.open(&#39;http://www.facebook.com/sharer.php?u={{url absolute="true"}}&amp;t={{title}}&#39;, &#39;facebookShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Share on Facebook">
+                                <li class="lztv-post-soc-fb"> <i class="fa fa-2 fa-facebook" aria-hidden="true"></i> </li>
+                                </a> <a href="{{url absolute="true"}}#" onclick="window.open(&#39;http://twitter.com/share?text={{title}} -&amp;url={{url absolute="true"}}&#39;, &#39;twitterShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Tweet This Post">
+                                <li class="lztv-post-soc-twit"> <i class="fa fa-2 fa-twitter" aria-hidden="true"></i> </li>
+                                </a>  <a href="mailto:?subject={{title}}&amp;BODY=I%20found%20this%20article%20interesting%20and%20thought%20of%20sharing%20it%20with%20you.%20Check%20it%20out:%20{{url absolute="true"}}">
+                                <li class="lztv-post-soc-email"> <i class="fa fa-2 fa-envelope" aria-hidden="true"></i> </li>
+                                </a> <a href="{{url absolute="true"}}#comments">
+                                <li class="lztv-post-soc-com lztv-com-click"> <i class="fa fa-2 fa-commenting" aria-hidden="true"></i> </li>
+                                </a>
+                              </ul>
+                              <div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                                <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                                  <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 52px; height: 253px;"></div>
+                                </div>
+                                <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                                  <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--lztv-post-soc-wrap-->
+                          <div id="lztv-soc-mob-wrap" class="" style="">
+                            <div class="lztv-soc-mob-out left relative">
+                              <div class="lztv-soc-mob-in">
+                                <div class="lztv-soc-mob-left left relative">
+                                  <ul class="lztv-soc-mob-list left relative">
+                                    <a href="{{url absolute="true"}}#" onclick="window.open(&#39;http://www.facebook.com/sharer.php?u={{url absolute="true"}}&amp;t={{title}}&#39;, &#39;facebookShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Share on Facebook">
+                                    <li class="lztv-soc-mob-fb"> <i class="fa fa-facebook" aria-hidden="true"></i><span class="lztv-soc-mob-fb">Share</span> </li>
+                                    </a> <a href="{{url absolute="true"}}#" onclick="window.open(&#39;http://twitter.com/share?text={{title}} -&amp;url={{url absolute="true"}}&#39;, &#39;twitterShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Tweet This Post">
+                                    <li class="lztv-soc-mob-twit"> <i class="fa fa-twitter" aria-hidden="true"></i><span class="lztv-soc-mob-fb">Tweet</span> </li>
+                                    </a> <a href="{{url absolute="true"}}#" onclick="window.open(&#39;http://pinterest.com/pin/create/button/?url={{url absolute="true"}}&amp;media={{img_url feature_image absolute="true"}}&amp;description={{title}}&#39;, &#39;pinterestShare&#39;, &#39;width=750,height=350&#39;); return false;" title="Pin This Post">
+                                    <li class="lztv-soc-mob-pin"> <i class="fa fa-pinterest-p" aria-hidden="true"></i> </li>
+                                    </a> <a href="whatsapp://send?text={{title}} {{url absolute="true"}}"></a>
+                                    <div class="whatsapp-share"><a href="whatsapp://send?text={{title}} {{url absolute="true"}}"><span class="whatsapp-but1">
+                                      <li class="lztv-soc-mob-what"> <i class="fa fa-whatsapp" aria-hidden="true"></i> </li>
+                                      </span></a> <a href="mailto:?subject={{title}}&amp;BODY=I%20found%20this%20article%20interesting%20and%20thought%20of%20sharing%20it%20with%20you.%20Check%20it%20out:%20{{url absolute="true"}}">
+                                      <li class="lztv-soc-mob-email"> <i class="fa fa-envelope-o" aria-hidden="true"></i> </li>
+                                      </a> <a href="{{url absolute="true"}}#comments">
+                                      <li class="lztv-soc-mob-com lztv-com-click"> <i class="fa fa-comment-o" aria-hidden="true"></i> </li>
+                                      </a> </div>
+                                  </ul>
+                                </div>
+                                <!--lztv-soc-mob-left--> 
+                              </div>
+                              <!--lztv-soc-mob-in-->
+                              <div class="lztv-soc-mob-right left relative"> <i class="fa fa-ellipsis-h" aria-hidden="true"></i> </div>
+                              <!--lztv-soc-mob-right--> 
+                            </div>
+                            <!--lztv-soc-mob-out--> 
+                          </div>
+                          <!--lztv-soc-mob-wrap-->
+                          <div class="lztv-post-soc-in">
+                            <div id="lztv-content-body" class="left relative">
+                              <div id="lztv-content-body-top" class="left">
+                                <div id="lztv-content-main" class="left relative">
+                                  {{content}}
+                                </div>
+                                <!--lztv-content-main-->
+                                <div id="lztv-content-bot" class="left">
+                                  
+                                  <!--lztv-post-gallery-wrap-->
+                                  	<div class="lztv-post-tags"> 
+										{{#if tags}}
+										<span class="lztv-post-tags-header">Related Topics:</span>
+										<span itemprop="keywords">
+											{{#foreach tags}}
+											<a class="lztv-actual-tags" href="{{url}}" rel="tag">{{name}}</a>
+											{{/foreach}}
+										</span>
+										{{/if}}
+									</div>
+                                  <!--lztv-post-tags-->
+                                  <div class="posts-nav-link"> </div>
+                                  <!--posts-nav-link-->
+                                  <div id="lztv-prev-next-wrap" class="left relative">
+                                    <div class="lztv-next-post-wrap right relative">
+									{{#next_post}}	
+									<a href="{{url}}" rel="bookmark">
+                                      <div class="lztv-prev-next-cont left relative">
+                                        <div class="lztv-next-cont-out left relative">
+                                          <div class="lztv-next-cont-in">
+                                            <div class="lztv-prev-next-text left relative"> <span class="lztv-prev-next-label left relative">Up Next</span>
+                                              <p>{{title}}</p>
+                                            </div>
+                                            <!--lztv-prev-next-text--> 
+                                          </div>
+                                          <!--lztv-next-cont-in--> 
+                                          <span class="lztv-next-arr fa fa-chevron-right right"></span> </div>
+                                        <!--lztv-prev-next-out--> 
+                                      </div>
+                                      <!--lztv-prev-next-cont--> 
+                                      </a>
+									  {{/next_post}}
+									  </div>
+                                    <!--lztv-next-post-wrap-->
+                                    <div class="lztv-prev-post-wrap left relative">
+									{{#prev_post}}
+									<a href="{{url}}" rel="bookmark">
+                                      <div class="lztv-prev-next-cont left relative">
+                                        <div class="lztv-prev-cont-out right relative"> <span class="lztv-prev-arr fa fa-chevron-left left"></span>
+                                          <div class="lztv-prev-cont-in">
+                                            <div class="lztv-prev-next-text left relative"> <span class="lztv-prev-next-label left relative">Don't Miss</span>
+                                              <p>{{title}}</p>
+                                            </div>
+                                            <!--lztv-prev-next-text--> 
+                                          </div>
+                                          <!--lztv-prev-cont-in--> 
+                                        </div>
+                                        <!--lztv-prev-cont-out--> 
+                                      </div>
+                                      <!--lztv-prev-next-cont--> 
+                                      </a>
+									{{/prev_post}}
+									  </div>
+                                    <!--lztv-prev-post-wrap--> 
+                                  </div>
+                                  <!--lztv-prev-next-wrap-->
+                                  <div id="lztv-author-box-wrap" class="left relative">
+						
+									{{#author}}
+                                    <div class="lztv-author-box-out right relative">
+                                      <div id="lztv-author-box-img" class="left relative"> <img alt="{{name}}" src="{{img_url profile_image}}" srcset="{{img_url profile_image}} 2x" class="avatar avatar-60 photo" height="60" width="60"> </div>
+                                      <!--lztv-author-box-img-->
+                                      <div class="lztv-author-box-in">
+                                        <div id="lztv-author-box-head" class="left relative"> <span class="lztv-author-box-name left relative"><a href="{{url}}" title="Posts by {{name}}" rel="author">{{name}}</a></span>
+                                          <div id="lztv-author-box-soc-wrap" class="left relative">
+											  <a href="{{facebook}}" alt="Facebook" target="_blank">
+												  <span class="lztv-author-box-soc fa fa-facebook-square fa-2"></span>
+											  </a> 
+											  <a href="{{twitter}}" alt="Twitter" target="_blank">
+												  <span class="lztv-author-box-soc fa fa-twitter-square fa-2"></span>
+											  </a> 
+											  </div>
+                                          <!--lztv-author-box-soc-wrap--> 
+                                        </div>
+                                        <!--lztv-author-box-head--> 
+                                      </div>
+                                      <!--lztv-author-box-in--> 
+                                    </div>
+                                    <!--lztv-author-box-out-->
+                                    <div id="lztv-author-box-text" class="left relative">
+                                      <p></p>
+                                      <p>{{bio}}</p>
+                                      <p></p>
+                                    </div>
+                                    <!--lztv-author-box-text--> 
+									{{/author}}
+                                  </div>
+                                  <!--lztv-author-box-wrap-->
+                                  <div class="lztv-org-wrap" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+                                    <div class="lztv-org-logo" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"> <img src="/assets/images/logo-nav.png" alt="{{@blog.title}}">
+                                      <meta itemprop="url" content="{{asset "images/logo-nav.png"}}">
+                                    </div>
+                                    <!--lztv-org-logo-->
+                                    <meta itemprop="name" content="{{@blog.title}}">
+                                  </div>
+                                  <!--lztv-org-wrap--> 
+                                </div>
+                                <!--lztv-content-bot--> 
+                              </div>
+                              <!--lztv-content-body-top-->
+                              <div class="lztv-cont-read-wrap">
+                                <div class="lztv-cont-read-but-wrap left relative"> <span class="lztv-cont-read-but">Continue Reading</span> </div>
+                                <!--lztv-cont-read-but-wrap-->
+                                {{> horizontal-ad-728-90}} 
+                                <!--lztv-post-bot-ad-->
+                                
+                                <!--######## PHASE TWO ############ RELATED ITEMS, OUTBRAIN OR OTHER SERVICE HERE ###### -->
+                                
+                                <!--comments--><strong> </strong>
+								</div>
+                              <!--lztv-cont-read-wrap--> 
+                            </div>
+                            <!--lztv-content-body--> 
+                          </div>
+                          <!--lztv-post-soc-in--> 
+                        </div>
+                        <!--lztv-post-soc-out--> 
+                      </div>
+                      <!--lztv-content-wrap-->
+                      <div id="lztv-post-add-box">
+                        
+                        <!--lztv-post-add-wrap--> 
+                      </div>
+                      <!--lztv-post-add-box--> 
+                    </div>
+                    <!--lztv-post-content--> 
+                  </div>
+                  <!--lztv-post-main-in-->
+                  <div id="lztv-side-wrap" class="left relative theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                    <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; left: 1231.5px; top: 0px;">
+                      
+                      {{> sliding-post-sidebar}}
+					  
+                      <div class="resize-sensor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden;">
+                        <div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                          <div style="position: absolute; left: 0px; top: 0px; transition: 0s; width: 330px; height: 616px;"></div>
+                        </div>
+                        <div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;">
+                          <div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--lztv-side-wrap--> </div>
+                <!--lztv-post-main-out--> 
+              </div>
+              <!--lztv-post-main-->
+              {{> related}}
+              <!--lztv-post-more-wrap--> 
+            </div>
+            <!--lztv-main-box--> 
+          </div>
+          <!--lztv-article-cont--> 
+        </article>
+        <!--lztv-article-wrap--> 
+      </div>
+      <!--lztv-main-body-wrap-->
+      {{> footer}}
+    </div>
+    <!--lztv-site-main--> 
+  </div>
+  <!--lztv-site-wall--> 
+</div>
+<!--lztv-site-->
+<div class="lztv-fly-top back-to-top"> <i class="fa fa-angle-up fa-3"></i> </div>
+<!--lztv-fly-top-->
+<div class="lztv-fly-fade lztv-fly-but-click"> </div>
+<!--lztv-fly-fade-->
+<div data-theiastickysidebar-sidebarselector="&quot;#lztv-side-wrap,.lztv-post-soc-wrap,.lztv-flex-side-wrap&quot;" data-theiastickysidebar-options="{&quot;containerSelector&quot;:&quot;&quot;,&quot;additionalMarginTop&quot;:120,&quot;additionalMarginBottom&quot;:20,&quot;updateSidebarHeight&quot;:false,&quot;minWidth&quot;:1004,&quot;sidebarBehavior&quot;:&quot;modern&quot;,&quot;disableOnResponsiveLayouts&quot;:true}"></div>
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+
+
+{{> tons-of-javascript}}
+
+
+<div id="ascrail2000" class="nicescroll-rails" style="width: 7px; z-index: 999999; cursor: default; position: absolute; top: 1870px; left: -27px; height: 372px; display: none;">
+  <div style="position: relative; top: 0px; float: right; width: 7px; height: 0px; background-color: rgb(136, 136, 136); border: 0px; background-clip: padding-box; border-radius: 5px;"></div>
+</div>
+<div id="ascrail2000-hr" class="nicescroll-rails" style="height: 7px; z-index: 999999; top: 2235px; left: -350px; position: absolute; cursor: default; display: none;">
+  <div style="position: relative; top: 0px; height: 7px; width: 0px; background-color: rgb(136, 136, 136); border: 0px; background-clip: padding-box; border-radius: 5px;"></div>
+</div>
+</body>
+</html>
+{{/post}}

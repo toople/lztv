@@ -1,0 +1,18 @@
+								<!--test-->
+								{{!#get "tags" limit="6"}}
+								{{!#if tags}}
+   								{{#foreach navigation}}
+								<li class="lztv-mega-dropdown menu-item menu-item-type-taxonomy menu-item-object-category menu-item-{{slug}}"><a href="{{url absolute="true"}}">{{label}}</a>
+                                    <div class="lztv-mega-dropdown">
+                                      <div class="lztv-main-box">
+                                        <ul class="lztv-mega-list">
+										<!--###################### POSTS EMBEDDED TO NAVIGATION ######################-->
+
+										<!--###################### POSTS EMBEDDED TO NAVIGATION ######################-->
+                                        </ul>
+                                      </div>
+                                    </div>
+                                </li>
+								{{/foreach}}
+								{{!/if}}
+								{{!/get}}

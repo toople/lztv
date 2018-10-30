@@ -1,0 +1,11 @@
+<div style="width:388px;">
+<nav class="lztv-pagination" role="navigation">
+    {{#if prev}}
+        <a class="lztv-newer-posts" href="{{page_url prev}}">Newer Posts <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></a>
+    {{/if}}
+    <span class="lztv-page-number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="lztv-older-posts" href="{{page_url next}}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Older Posts</a>
+    {{/if}}
+</nav>
+</div>

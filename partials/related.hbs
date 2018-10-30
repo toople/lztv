@@ -1,0 +1,29 @@
+						<div id="lztv-post-more-wrap" class="left relative">
+                           <h4 class="lztv-widget-home-title"> <span class="lztv-widget-home-title">Featured</span> </h4>
+                           <ul class="lztv-post-more-list left relative">
+						   {{#get "posts" filter="featured:true" limit="4"}}
+								{{#foreach posts}}
+								{{^has tag="#tallimage"}}
+								<a href="{{url}}">
+                                 <li>
+                                    <div class="lztv-post-more-img left relative">
+                                       <img width="400" height="240" src="assets/images/politics-400x240.jpg" class="lztv-reg-img wp-post-image" alt="" srcset="{{img_url feature_image}} 400w, {{img_url feature_image}} 300w, {{img_url feature_image}} 768w, {{img_url feature_image}} 1024w, {{img_url feature_image}} 1000w, {{img_url feature_image}} 590w, {{img_url feature_image}} 1600w" sizes="(max-width: 400px) 100vw, 400px"> <img width="80" height="80" src="{{img_url feature_image}}" class="lztv-mob-img wp-post-image" alt="" srcset="{{img_url feature_image}} 80w, {{img_url feature_image}} 150w, {{img_url feature_image}} 180w, {{img_url feature_image}} 300w, {{img_url feature_image}} 600w" sizes="(max-width: 80px) 100vw, 80px">
+                                       {{#has tag="Video"}}
+									   <div class="lztv-vid-box-wrap lztv-vid-box-mid lztv-vid-marg"> <i class="fa fa-2 fa-play" aria-hidden="true"></i> </div>
+									   {{/has}}
+                                       <!--lztv-vid-box-wrap--> 
+                                    </div>
+                                    <!--lztv-post-more-img-->
+                                    <div class="lztv-post-more-text left relative">
+                                       <div class="lztv-cat-date-wrap left relative"> <span class="lztv-cd-cat left relative">{{tags limit="1" autolink="false"}}</span><span class="lztv-cd-date left relative">{{date published_at timeago="true"}}</span> </div>
+                                       <!--lztv-cat-date-wrap-->
+                                       <p>{{title}}</p>
+                                    </div>
+                                    <!--lztv-post-more-text--> 
+                                 </li>
+                              	</a>
+								{{/has}}
+                              {{/foreach}}
+                           {{/get}}
+                           </ul>
+                        </div>

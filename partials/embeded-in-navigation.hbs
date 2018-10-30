@@ -1,0 +1,11 @@
+						  					
+										{{#get "posts" limit="6" order="published_at desc" filter="tags:featured" as |embedded-nav-posts|}}
+											{{#foreach embedded-nav-posts}}
+											<li><a href="{{url}}">
+                                            <div class="lztv-mega-img"><img width="400" height="240" src="{{img_url feature_image}}" class="attachment-lztv-mid-thumb size-lztv-mid-thumb wp-post-image" alt="#" sizes="(max-width: 400px) 100vw, 400px">
+                                              <div class="lztv-vid-box-wrap lztv-vid-box-small lztv-vid-marg-small"><i class="fa fa-play fa-3"></i></div>
+                                            </div>
+                                            <p>{{title}}													</p>
+                                            </a></li>
+											{{/foreach}}
+										{{/get}}

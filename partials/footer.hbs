@@ -1,0 +1,55 @@
+<footer id="lztv-foot-wrap" class="left relative">
+        <div id="lztv-foot-top" class="left relative">
+          <div class="lztv-main-box">
+            <div id="lztv-foot-logo" class="left relative"> <a href="/"><img src="/assets/images/logo-large.png" alt="LZTV" data-rjs="2"></a> </div>
+            <!--lztv-foot-logo-->
+            <div id="lztv-foot-soc" class="left relative">
+              <ul class="lztv-foot-soc-list left relative">
+                <li><a href="{{facebook_url @blog.facebook}}" target="_blank" class="fa fa-facebook fa-2"></a></li>
+                <li><a href="{{twitter_url @blog.twitter}}" target="_blank" class="fa fa-twitter fa-2"></a></li>
+                <li><a href="http://www.instagram.com/lazytechtv" target="_blank" class="fa fa-instagram fa-2"></a></li>
+                <li><a href="https://www.youtube.com/user/lazytechtv" target="_blank" class="fa fa-youtube-play fa-2"></a></li>
+              </ul>
+            </div>
+            <!--lztv-foot-soc-->
+            <div id="lztv-foot-menu-wrap" class="left relative">
+              <div id="lztv-foot-menu" class="left relative">
+                <div class="menu-footer-menu-container">
+                  <ul id="menu-footer-menu" class="menu">
+					{{!#get "tags" limit="6"}}
+						{{!#if tags}}
+						{{#foreach navigation}}
+                    		<li id="menu-item-{{slug}}" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-{{slug}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+						{{/foreach}}
+						{{!/if}}
+					{{!/get}}
+
+                  </ul>
+                </div>
+              </div>
+              <!--lztv-foot-menu--> 
+            </div>
+            <!--lztv-foot-menu-wrap--> 
+          </div>
+          <!--lztv-main-box--> 
+        </div>
+        <!--lztv-foot-top-->
+        <div id="lztv-foot-bot" class="left relative">
+          <div class="lztv-main-box">
+            <div id="lztv-foot-copy" class="left relative">
+              <p><a href="{{@blog.url}}/terms_of_use/">Terms Of Use</a> | <a href="{{@blog.url}}/privacy_policy/">Privacy Policy</a> | <a href="{{@blog.url}}/contact_us/">Contact / Tip Us</a> | <a href="{{@blog.url}}/about_lztv">About LZTV</a> | ©2018 <a href="https://www.toople.org">Toople, Inc</a>. All Rights Reserved.
+				
+					<ul class="menu">
+		{{#foreach navigation}}
+		<li class="menu-item {{slug}}{{#if current}} current-menu-item{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+		{{/foreach}}
+	</ul>
+				
+				</p>
+            </div>
+            <!--lztv-foot-copy--> 
+          </div>
+          <!--lztv-main-box--> 
+        </div>
+        <!--lztv-foot-bot--> 
+      </footer>
